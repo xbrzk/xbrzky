@@ -1,0 +1,90 @@
+/* ===== HERO HP: teks kiri, kartu ID kanan ===== */
+.hero { padding: 105px 16px 40px; }
+.hero-grid { grid-template-columns: 1.2fr 0.8fr; gap: 6px; }
+.hero h1 { font-size: 1.6rem; }
+.hero h2 { font-size: 0.95rem; margin: 8px 0 10px; min-height: 1.4rem; }
+.kursor { height: 1rem; }
+.hero .deskripsi { font-size: 0.72rem; line-height: 1.6; }
+.tombol-grup { gap: 8px; margin-top: 16px; }
+.tombol { padding: 9px 14px; font-size: 0.72rem; border-radius: 8px; }
+.connect { margin: 22px 0 8px; font-size: 0.65rem; }
+.sosial { gap: 8px; }
+.sosial a { width: 34px; height: 34px; font-size: 1rem; border-radius: 8px; }
+
+/* tulisan kecil pelengkap hero */
+.eyebrow { font-size: 0.6rem; letter-spacing: 0.3em; gap: 10px; margin-bottom: 8px; }
+.eyebrow::before { width: 20px; }
+.hero-grid { padding-inline: 4px; }
+.hero .tombol { padding: 9px 14px; }
+.hero .sosial a { width: 34px; height: 34px; }
+.hero-tagline { left: 20px; bottom: 22px; font-size: 0.58rem; padding-left: 12px; }
+.lanyard-hint { font-size: 0.55rem; letter-spacing: 0.1em; }
+
+.maskot { width: 42px; height: 42px; }
+.maskot-bubble { font-size: 0.62rem; padding: 5px 9px; }
+.maskot-kaget { font-size: 0.9rem; }
+
+.maskot {              /* ganti dengan nama kelas/id maskotmu */
+    width: 85px;      /* sebelumnya sekitar 40px */
+    height: auto;
+    right: 70px;       /* geser agar tidak menimpa tombol AI */
+    bottom: 10px;
+}
+.maskot svg,
+.maskot img {
+    width: 85%;
+    height: auto;
+}
+
+/* Phone layout only */
+@media (max-width: 600px) {
+/* ===== HERO HP: teks kiri, kartu ID kanan ===== */
+.hero { padding: 105px 16px 40px; }
+.hero-grid { grid-template-columns: 1.2fr 0.8fr; gap: 6px; }
+.hero h1 { font-size: 1.9rem; }
+.hero h2 { font-size: 1.1rem; margin: 8px 0 10px; min-height: 1.6rem; }
+.kursor { height: 1.1rem; }
+.hero .deskripsi { font-size: 0.8rem; line-height: 1.65; }
+.tombol-grup { gap: 8px; margin-top: 16px; }
+.tombol { padding: 10px 16px; font-size: 0.8rem; border-radius: 8px; }
+.connect { margin: 22px 0 8px; font-size: 0.65rem; }
+.sosial { gap: 8px; }
+.sosial a { width: 34px; height: 34px; font-size: 1rem; border-radius: 8px; }
+
+/* tulisan kecil pelengkap hero */
+.eyebrow { font-size: 0.68rem; letter-spacing: 0.3em; gap: 10px; margin-bottom: 8px; }
+.eyebrow::before { width: 20px; }
+.hero-grid { padding-inline: 4px; }
+.hero .tombol { padding: 10px 16px; }
+.hero .sosial a { width: 34px; height: 34px; }
+.hero-tagline { left: 20px; bottom: 22px; font-size: 0.58rem; padding-left: 12px; }
+.lanyard-hint { font-size: 0.55rem; letter-spacing: 0.1em; }
+
+
+    /* Keep the hero readable on narrow screens and leave space for the floating ID. */
+    .hero { min-height: 760px; padding-top: 112px; padding-bottom: 54px; }
+    .hero-grid { grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: 5px; }
+    .hero-teks { min-width: 0; }
+    .hero .deskripsi { overflow-wrap: anywhere; }
+    .nav-pill { padding: 10px 15px; }
+    .nav-links { background: var(--surface); }
+    .ai-btn { width: 52px; height: 52px; right: 14px; bottom: 14px; }
+    .ai-panel { right: 12px; bottom: 78px; max-width: calc(100vw - 24px); }
+    .about, .experience, .tech, .projects, .contacts { padding: 68px 16px; }
+    .judul-seksi { font-size: clamp(1.8rem, 8vw, 2.2rem); margin-bottom: 36px; }
+    .tech-kartu { gap: 10px; }
+    .tech-kartu > div { padding: 18px 6px; }
+    .project-card { padding: 24px 18px; }
+    .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .contact-card { padding: 20px 10px; overflow-wrap: anywhere; }
+    .footer { padding: 42px 18px 0; }
+}
+
+@media (max-width: 380px) {
+    .hero { min-height: 720px; padding-inline: 12px; }
+    .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr); gap: 2px; }
+    .hero h1 { font-size: clamp(1.6rem, 8vw, 1.9rem); }
+    .hero .deskripsi { font-size: 0.76rem; }
+    .hero .tombol { padding: 9px 12px; font-size: 0.74rem; }
+    .sosial { gap: 6px; }
+}
